@@ -1,0 +1,14 @@
+type Mutation {
+  createAccount(
+    username: String!
+    email: String!
+    firstName: String
+    lastName: String
+    bio: String
+  ): User!
+}
+
+# This Query is Fake
+type Query {
+  something: String!
+}

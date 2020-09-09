@@ -10,6 +10,8 @@ Instagram clone
 ## APIs
 
 - [x] Create account
+- [x] Request Secret
+- [ ] Send Secret to Email
 - [ ] Log in
 - [ ] Like / Unlike a photo
 - [ ] Follow / Unfollow user

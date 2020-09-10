@@ -12,8 +12,9 @@ Instagram clone
 - [x] Create account
 - [x] Request Secret
 - [x] Send Secret to Email
-- [ ] Log in
-- [ ] Like / Unlike a photo
+- [x] Confirm Secret
+- [x] Like / Unlike a photo
+- [ ] Comment on a photo
 - [ ] Follow / Unfollow user
 - [ ] Search by User
 - [ ] Search by location
@@ -21,6 +22,5 @@ Instagram clone
 - [ ] Edit my profile
 - [ ] Upload a photo
 - [ ] Edit the photo (Delete)
-- [ ] Comment on a photo
 - [ ] See the full photo (new page)
 - [ ] See the feed

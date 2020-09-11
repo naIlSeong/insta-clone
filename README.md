@@ -20,8 +20,15 @@ Instagram clone
 - [x] Follow user
 - [x] Unfollow user
 - [ ] See user profile
+- [ ] See My profile
 - [x] Edit my profile
 - [ ] Upload a photo
 - [ ] Edit the photo (Delete)
 - [ ] See the full photo (new page)
 - [ ] See the feed
+
+---
+
+## TODO
+
+- [ ] Follow / Unfollow -> Toggle Follow

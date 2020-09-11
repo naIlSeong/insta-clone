@@ -22,9 +22,9 @@ Instagram clone
 - [x] See user profile
 - [x] See My profile
 - [x] Edit my profile
+- [x] See the full Post (new page)
 - [ ] Upload a photo
 - [ ] Edit the photo (Delete)
-- [ ] See the full photo (new page)
 - [ ] See the feed
 
 ---

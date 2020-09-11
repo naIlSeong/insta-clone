@@ -17,7 +17,8 @@ Instagram clone
 - [x] Comment on a photo
 - [x] Search by User
 - [x] Search by location
-- [ ] Follow / Unfollow user
+- [x] Follow user
+- [x] Unfollow user
 - [ ] See user profile
 - [ ] Edit my profile
 - [ ] Upload a photo

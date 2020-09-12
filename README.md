@@ -24,8 +24,10 @@ Instagram clone
 - [x] Edit my profile
 - [x] See the full Post (new page)
 - [x] Upload a photo
-- [ ] Edit the photo (Delete)
-- [ ] See the feed
+- [x] Edit the photo (Delete)
+- [x] See the feed
+- [ ] Send Message
+- [ ] Rooms
 
 ---
 

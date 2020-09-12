@@ -26,11 +26,14 @@ Instagram clone
 - [x] Upload a photo
 - [x] Edit the photo (Delete)
 - [x] See the feed
-- [ ] Send Message
-- [ ] Rooms
+- [x] Send Message
+- [ ] See Rooms
+- [ ] See Room
+- [ ] Receive Message (Realtime)
 
 ---
 
 ## TODO
 
 - [ ] Follow / Unfollow -> Toggle Follow
+- [ ] To separate sendMessage and createRoom

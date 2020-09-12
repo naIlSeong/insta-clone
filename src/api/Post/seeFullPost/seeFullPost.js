@@ -6,6 +6,7 @@ export default {
     seeFullPost: async (_, args) => {
       const { id } = args;
       const post = await prisma.post({ id });
+      const files = await prisma.post({ id }).files();
       const comments = await prisma
         .post({ id })
         .comments()
@@ -14,7 +15,7 @@ export default {
         .likesConnection({ where: { post: { id } } })
         .aggregate()
         .count();
-      return { post, comments, likeCount };
+      return { post, files, comments, likeCount };
     },
   },
 };

@@ -27,8 +27,8 @@ Instagram clone
 - [x] Edit the photo (Delete)
 - [x] See the feed
 - [x] Send Message
-- [ ] See Rooms
-- [ ] See Room
+- [x] See Rooms
+- [x] See Room
 - [ ] Receive Message (Realtime)
 
 ---

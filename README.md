@@ -29,7 +29,7 @@ Instagram clone
 - [x] Send Message
 - [x] See Rooms
 - [x] See Room
-- [ ] Receive Message (Realtime)
+- [x] Receive Message (Realtime)
 
 ---
 

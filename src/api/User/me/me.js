@@ -7,14 +7,7 @@ export default {
       const {
         user: { id },
       } = request;
-      const userProfile = await prisma.user({ id });
-      const posts = await prisma.user({ id }).posts();
-      const following = await prisma.user({ id }).following();
-      return {
-        user: userProfile,
-        posts,
-        following,
-      };
+      return prisma.user({ id });
     },
   },
 };

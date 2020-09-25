@@ -3,33 +3,28 @@ import { prisma } from "../../../generated/prisma-client";
 export default {
   User: {
     posts: ({ id }) => prisma.user({ id }).posts(),
+    following: ({ id }) => prisma.user({ id }).following(),
+    followers: ({ id }) => prisma.user({ id }).followers(),
     likes: ({ id }) => prisma.user({ id }).likes(),
     comments: ({ id }) => prisma.user({ id }).comments(),
     rooms: ({ id }) => prisma.user({ id }).rooms(),
-    following: ({ id }) => prisma.user({ id }).following(),
-    followers: ({ id }) => prisma.user({ id }).followers(),
-    followingCounte: ({ id }) =>
+    postsCount: ({ id }) =>
       prisma
-        .usersConnection({
-          where: {
-            following_some: { id },
-          },
-        })
+        .postsConnection({ where: { user: { id } } })
         .aggregate()
         .count(),
-    followersCounte: ({ id }) =>
+    followingCount: ({ id }) =>
       prisma
-        .usersConnection({
-          where: {
-            followers_some: { id },
-          },
-        })
+        .usersConnection({ where: { followers_some: { id } } })
         .aggregate()
         .count(),
-    fullName: (parent) => {
-      return `${parent.firstName} ${parent.lastName}`;
-    },
-    isFollower: async (parent, _, { request }) => {
+    followersCount: ({ id }) =>
+      prisma
+        .usersConnection({ where: { following_none: { id } } })
+        .aggregate()
+        .count(),
+    fullName: (parent) => `${parent.firstName} ${parent.lastName}`,
+    isFollowing: async (parent, _, { request }) => {
       const { user } = request;
       const { id: parentId } = parent;
       try {
@@ -39,14 +34,14 @@ export default {
               id: user.id,
             },
             {
-              followers_some: {
+              following_some: {
                 id: parentId,
               },
             },
           ],
         });
-      } catch (error) {
-        console.log(error);
+      } catch {
+        return false;
       }
     },
     isSelf: (parent, _, { request }) => {

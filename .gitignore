@@ -105,7 +105,7 @@ dist
 
 yarn.lock
 generated
-prisma.yml
+
 src/words.js
 uploads/**/*
 build/

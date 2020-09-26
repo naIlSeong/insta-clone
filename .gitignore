@@ -106,6 +106,5 @@ dist
 
 generated
 
-src/words.js
 uploads/**/*
 build/
